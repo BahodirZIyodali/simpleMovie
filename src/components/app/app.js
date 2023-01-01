@@ -8,10 +8,10 @@ import { useState } from 'react'
 import { v4 as uuidv4 } from 'uuid';
 const App = () => {
   const [data,setData]=useState( [
-    { name: 'Ertugrul',viewers:81 ,favourite:false , like:false ,id:1  },                         
-    { name: 'Benji',  viewers:21 ,favourite:false , like:false  ,id:2   },
-    { name: 'Naruto', viewers:11 ,favourite:false  , like:false  ,id:3   },
-    { name: 'Kobe',   viewers:11 , favourite:false , like:false  , id:4     },
+    { name: 'Spiderman',viewers:81 ,favourite:false , like:false ,id:1  },                         
+    // { name: 'Benji',  viewers:21 ,favourite:false , like:false  ,id:2   },
+    // { name: 'Naruto', viewers:11 ,favourite:false  , like:false  ,id:3   },
+    // { name: 'Kobe',   viewers:11 , favourite:false , like:false  , id:4     },
   ])
   const onDelete = (id)=>{
     setData(data.filter(item=>item.id!==id))
